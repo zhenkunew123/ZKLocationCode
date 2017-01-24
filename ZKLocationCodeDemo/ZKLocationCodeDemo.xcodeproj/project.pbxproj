@@ -15,6 +15,9 @@
 		6B5281DE1E37382400E023C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B5281DC1E37382400E023C9 /* LaunchScreen.storyboard */; };
 		6B5281E91E37382400E023C9 /* ZKLocationCodeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5281E81E37382400E023C9 /* ZKLocationCodeDemoTests.m */; };
 		6B5281F41E37382400E023C9 /* ZKLocationCodeDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5281F31E37382400E023C9 /* ZKLocationCodeDemoUITests.m */; };
+		6B5282061E3740FB00E023C9 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5282051E3740FB00E023C9 /* TableViewController.m */; };
+		6B5282091E37410600E023C9 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B5282081E37410600E023C9 /* CollectionViewController.m */; };
+		6B52820D1E3745D100E023C9 /* ZKLocationCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B52820C1E3745D100E023C9 /* ZKLocationCode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		6B5281EF1E37382400E023C9 /* ZKLocationCodeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZKLocationCodeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B5281F31E37382400E023C9 /* ZKLocationCodeDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKLocationCodeDemoUITests.m; sourceTree = "<group>"; };
 		6B5281F51E37382400E023C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B5282041E3740FB00E023C9 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		6B5282051E3740FB00E023C9 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		6B5282071E37410600E023C9 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		6B5282081E37410600E023C9 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		6B52820B1E3745D100E023C9 /* ZKLocationCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKLocationCode.h; sourceTree = "<group>"; };
+		6B52820C1E3745D100E023C9 /* ZKLocationCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKLocationCode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,11 @@
 				6B5281D21E37382400E023C9 /* AppDelegate.m */,
 				6B5281D41E37382400E023C9 /* ViewController.h */,
 				6B5281D51E37382400E023C9 /* ViewController.m */,
+				6B5282041E3740FB00E023C9 /* TableViewController.h */,
+				6B5282051E3740FB00E023C9 /* TableViewController.m */,
+				6B5282071E37410600E023C9 /* CollectionViewController.h */,
+				6B5282081E37410600E023C9 /* CollectionViewController.m */,
+				6B52820A1E3745D100E023C9 /* ZKLocationCode */,
 				6B5281D71E37382400E023C9 /* Main.storyboard */,
 				6B5281DA1E37382400E023C9 /* Assets.xcassets */,
 				6B5281DC1E37382400E023C9 /* LaunchScreen.storyboard */,
@@ -138,6 +152,16 @@
 				6B5281F51E37382400E023C9 /* Info.plist */,
 			);
 			path = ZKLocationCodeDemoUITests;
+			sourceTree = "<group>";
+		};
+		6B52820A1E3745D100E023C9 /* ZKLocationCode */ = {
+			isa = PBXGroup;
+			children = (
+				6B52820B1E3745D100E023C9 /* ZKLocationCode.h */,
+				6B52820C1E3745D100E023C9 /* ZKLocationCode.m */,
+			);
+			name = ZKLocationCode;
+			path = ../../ZKLocationCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,8 +300,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B52820D1E3745D100E023C9 /* ZKLocationCode.m in Sources */,
 				6B5281D61E37382400E023C9 /* ViewController.m in Sources */,
+				6B5282091E37410600E023C9 /* CollectionViewController.m in Sources */,
 				6B5281D31E37382400E023C9 /* AppDelegate.m in Sources */,
+				6B5282061E3740FB00E023C9 /* TableViewController.m in Sources */,
 				6B5281D01E37382400E023C9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +545,7 @@
 				6B5281FA1E37382400E023C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B5281FB1E37382400E023C9 /* Build configuration list for PBXNativeTarget "ZKLocationCodeDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +554,7 @@
 				6B5281FD1E37382400E023C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B5281FE1E37382400E023C9 /* Build configuration list for PBXNativeTarget "ZKLocationCodeDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +563,7 @@
 				6B5282001E37382400E023C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
