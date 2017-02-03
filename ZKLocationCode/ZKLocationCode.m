@@ -258,6 +258,10 @@ const void * ACTIONNAME = "ACTIONNAME";
 
 @end
 
+@interface UITableView ()
+- (void)_userSelectRowAtPendingSelectionIndexPath:(id)obj;
+@end
+
 @implementation UITableView (zk_extension)
 
 + (void)load {
