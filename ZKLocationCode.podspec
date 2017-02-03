@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name         = "ZKLocationCode"
   s.version      = "0.0.1"
-  s.summary      = "A fast integration images loop function of custom control"
-  s.description  = "A fast integration images loop function of custom control addtion with cocoapod support."
+  s.summary      = "定位代码"
+  s.description  = "定位代码，方便阅读"
   s.homepage     = "https://github.com/zhenkunew123/ZKLocationCode"
   s.social_media_url   = "http://www.weibo.com/u/5527441819"
   s.license= { :type => "MIT", :file => "LICENSE" }

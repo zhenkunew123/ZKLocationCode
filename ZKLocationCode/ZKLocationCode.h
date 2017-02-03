@@ -21,6 +21,8 @@
 ///
 + (ZKLocationCode *)locationCodeIsVc:(BOOL)vc isBtn:(BOOL)btn isShowUI:(BOOL)ui isCell:(BOOL)cell;
 
+@end
 
-
+@interface UITableView ()
+- (void)_userSelectRowAtPendingSelectionIndexPath:(id)obj;
 @end
