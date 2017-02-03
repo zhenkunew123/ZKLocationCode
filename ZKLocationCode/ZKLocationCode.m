@@ -259,19 +259,19 @@ const void * ACTIONNAME = "ACTIONNAME";
 @end
 
 @interface UITableView ()
-- (void)_userSelectRowAtPendingSelectionIndexPath:(id)obj;
+//- (void)_userSelectRowAtPendingSelectionIndexPath:(id)obj;
 @end
 
 @implementation UITableView (zk_extension)
 
-+ (void)load {
-    [ZKLocationCode swizzleInstanceMethod:NSClassFromString(@"UITableView") originSelector:@selector(_userSelectRowAtPendingSelectionIndexPath:) otherSelector:@selector(zk_userSelectRowAtPendingSelectionIndexPath:)];
-}
-
-- (void)zk_userSelectRowAtPendingSelectionIndexPath:(id)obj {
-    [self zk_userSelectRowAtPendingSelectionIndexPath:obj];
-    [[ZKLocationCode sharedLocationCode] didSelCell:self.superview action:@"didSelectRowAtIndexPath"];
-}
+//+ (void)load {
+//    [ZKLocationCode swizzleInstanceMethod:NSClassFromString(@"UITableView") originSelector:@selector(_userSelectRowAtPendingSelectionIndexPath:) otherSelector:@selector(zk_userSelectRowAtPendingSelectionIndexPath:)];
+//}
+//
+//- (void)zk_userSelectRowAtPendingSelectionIndexPath:(id)obj {
+//    [self zk_userSelectRowAtPendingSelectionIndexPath:obj];
+//    [[ZKLocationCode sharedLocationCode] didSelCell:self.superview action:@"didSelectRowAtIndexPath"];
+//}
 
 @end
 
