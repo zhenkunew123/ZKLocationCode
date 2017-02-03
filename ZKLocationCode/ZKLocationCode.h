@@ -23,6 +23,3 @@
 
 @end
 
-@interface UITableView ()
-- (void)_userSelectRowAtPendingSelectionIndexPath:(id)obj;
-@end
